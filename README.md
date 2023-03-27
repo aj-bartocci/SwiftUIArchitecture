@@ -33,6 +33,25 @@ Pros:
 Cons:
 - Very difficult to do MVVM since some values are in the Environment which cannot be accessed outside of a View, and when accessed in a View it happens at render time. There are some hacky strategies that involve using optionals and setup during `onAppear` but feel wrong. 
 - Causes a lot of 'unnecessary' renders for changes the the View does not actually consume
+```Swift
+struct ViewOne: View {
+    @EnvironmentObject var state: GlobalStateObject
+    
+    var body: some View {
+        VStack {
+            Text("Foo: \(state.foo)")
+            Text("Bar: \(state.bar)")
+            Text("Baz: \(state.baz)")
+            Button("Update Foo") {
+                state.foo = "New from View One"
+            }
+            NavigationLink("Push View Two") {
+                LazyView(ViewTwo())
+            }
+        }
+    }
+}
+```
  
 2. The 'wrapped' way which adds an additional View layer to each View that consumes @EnvironmentObject
 Pros:
@@ -41,6 +60,43 @@ Pros:
 Cons: 
 - Makes the View hierarchy more complex 
 - Doubles the amount of Views needed 
+Pro/Con
+- Explicitly pulling off state & functions from the EnvironmentObject
+```Swift
+struct WrappedViewOne: View {
+    @EnvironmentObject var state: GlobalStateObject
+    
+    var body: some View {
+        Content(
+            foo: state.foo,
+            bar: state.bar,
+            baz: state.baz
+        )
+    }
+    
+    struct Content: View {
+        let foo: String
+        let bar: String
+        let baz: String
+        
+        var body: some View {
+            VStack {
+                Text("Foo: \(foo)")
+                Text("Bar: \(bar)")
+                Text("Baz: \(baz)")
+                Button("Update Foo") {
+                    // would need to pass an update function in 
+                    // or some type of 2 way binding
+                    // state.foo = "New from View One"
+                }
+                NavigationLink("Push View Two") {
+                    LazyView(WrappedViewTwo())
+                }
+            }
+        }
+    }
+}
+```
 
 It may come as a surprise but the 'wrapped' strategy performed better than the 'vanilla' way. Even though wrapping Views effectively doubles the total amount of Views being used, it cuts the amount of renders in 1/2. This is becuase of how @EnvironmentObject actually triggers a View refresh. If ANY property of an @EnvironmentObject model changes then the View containing it will re-render, which becomes problematic when a View only cares about a single property but refreshes when other properties that it does not care about change. When wrapping a View less refreshes happen because only the wrapper View refreshes which does not contain any actual changes, the inner view does not refresh because the data it cares about did not actually change. It's a small difference but it makes a huge difference in View rendering at scale. 
  
