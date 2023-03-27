@@ -28,8 +28,10 @@ Passing shared state via SwiftUI's environment allows us to get incredible depen
 ## @EnvironmentObject Benchmark Results
 Two strategies were used for building the Views. 
 1. The 'vanilla' way which simply passes @EnvironmentObject to each View
+
 Pros: 
 - Simple and clean View heirarchy 
+
 Cons:
 - Very difficult to do MVVM since some values are in the Environment which cannot be accessed outside of a View, and when accessed in a View it happens at render time. There are some hacky strategies that involve using optionals and setup during `onAppear` but feel wrong. 
 - Causes a lot of 'unnecessary' renders for changes the the View does not actually consume
@@ -54,12 +56,15 @@ struct ViewOne: View {
 ```
  
 2. The 'wrapped' way which adds an additional View layer to each View that consumes @EnvironmentObject
+
 Pros:
 - Easy to use MVVM since values the view wants come in via initializer, which can be passed to ViewModel
-- Cuts down on total View renders when working with state that updates frequently 
+- Cuts down on total View renders when working with state that updates frequently
+
 Cons: 
 - Makes the View hierarchy more complex 
 - Doubles the amount of Views needed 
+
 Pro/Con
 - Explicitly pulling off state & functions from the EnvironmentObject
 ```Swift
