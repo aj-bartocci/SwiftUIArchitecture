@@ -32,6 +32,14 @@
 		2104DDC029D1E34E00BD25D8 /* WrappedEnv-Device-1-graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 2104DDBF29D1E34E00BD25D8 /* WrappedEnv-Device-1-graph.png */; };
 		2104DDC229D1E36600BD25D8 /* WrappedEnv-Device-1-summary.png in Resources */ = {isa = PBXBuildFile; fileRef = 2104DDC129D1E36600BD25D8 /* WrappedEnv-Device-1-summary.png */; };
 		2104DDC429D1E3CE00BD25D8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2104DDC329D1E3CE00BD25D8 /* README.md */; };
+		2104DDC829D3B29B00BD25D8 /* MV-Device-1-graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 2104DDC729D3B29B00BD25D8 /* MV-Device-1-graph.png */; };
+		2104DDCA29D3B2A800BD25D8 /* MV-Device-1-summary.png in Resources */ = {isa = PBXBuildFile; fileRef = 2104DDC929D3B2A800BD25D8 /* MV-Device-1-summary.png */; };
+		2104DDCC29D3B3FB00BD25D8 /* MVVM-Device-1-graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 2104DDCB29D3B3FB00BD25D8 /* MVVM-Device-1-graph.png */; };
+		2104DDCE29D3B41300BD25D8 /* MVVM-Device-1-summary.png in Resources */ = {isa = PBXBuildFile; fileRef = 2104DDCD29D3B41300BD25D8 /* MVVM-Device-1-summary.png */; };
+		2104DDD029D3B43800BD25D8 /* MVSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2104DDCF29D3B43800BD25D8 /* MVSecondView.swift */; };
+		2104DDD229D3B43F00BD25D8 /* MVThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2104DDD129D3B43F00BD25D8 /* MVThirdView.swift */; };
+		2104DDD429D3B44800BD25D8 /* MVFourthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2104DDD329D3B44800BD25D8 /* MVFourthView.swift */; };
+		2104DDD629D3B44F00BD25D8 /* MVFifthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2104DDD529D3B44F00BD25D8 /* MVFifthView.swift */; };
 		8207986729D3A1F800ABE1D3 /* MVState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207986629D3A1F800ABE1D3 /* MVState.swift */; };
 		8207986929D3A2B500ABE1D3 /* MVFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207986829D3A2B500ABE1D3 /* MVFirstView.swift */; };
 		82E1015129D371CC00C5CF92 /* MVVMFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E1015029D371CC00C5CF92 /* MVVMFirstView.swift */; };
@@ -69,6 +77,14 @@
 		2104DDBF29D1E34E00BD25D8 /* WrappedEnv-Device-1-graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WrappedEnv-Device-1-graph.png"; sourceTree = "<group>"; };
 		2104DDC129D1E36600BD25D8 /* WrappedEnv-Device-1-summary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WrappedEnv-Device-1-summary.png"; sourceTree = "<group>"; };
 		2104DDC329D1E3CE00BD25D8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2104DDC729D3B29B00BD25D8 /* MV-Device-1-graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MV-Device-1-graph.png"; sourceTree = "<group>"; };
+		2104DDC929D3B2A800BD25D8 /* MV-Device-1-summary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MV-Device-1-summary.png"; sourceTree = "<group>"; };
+		2104DDCB29D3B3FB00BD25D8 /* MVVM-Device-1-graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MVVM-Device-1-graph.png"; sourceTree = "<group>"; };
+		2104DDCD29D3B41300BD25D8 /* MVVM-Device-1-summary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MVVM-Device-1-summary.png"; sourceTree = "<group>"; };
+		2104DDCF29D3B43800BD25D8 /* MVSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVSecondView.swift; sourceTree = "<group>"; };
+		2104DDD129D3B43F00BD25D8 /* MVThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVThirdView.swift; sourceTree = "<group>"; };
+		2104DDD329D3B44800BD25D8 /* MVFourthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVFourthView.swift; sourceTree = "<group>"; };
+		2104DDD529D3B44F00BD25D8 /* MVFifthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVFifthView.swift; sourceTree = "<group>"; };
 		8207986629D3A1F800ABE1D3 /* MVState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVState.swift; sourceTree = "<group>"; };
 		8207986829D3A2B500ABE1D3 /* MVFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVFirstView.swift; sourceTree = "<group>"; };
 		82E1015029D371CC00C5CF92 /* MVVMFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMFirstView.swift; sourceTree = "<group>"; };
@@ -182,6 +198,10 @@
 				2104DDBD29D1E33700BD25D8 /* VanillaEnv-Device-1-summary.png */,
 				2104DDBF29D1E34E00BD25D8 /* WrappedEnv-Device-1-graph.png */,
 				2104DDC129D1E36600BD25D8 /* WrappedEnv-Device-1-summary.png */,
+				2104DDC729D3B29B00BD25D8 /* MV-Device-1-graph.png */,
+				2104DDC929D3B2A800BD25D8 /* MV-Device-1-summary.png */,
+				2104DDCB29D3B3FB00BD25D8 /* MVVM-Device-1-graph.png */,
+				2104DDCD29D3B41300BD25D8 /* MVVM-Device-1-summary.png */,
 			);
 			path = Profiling;
 			sourceTree = "<group>";
@@ -212,6 +232,10 @@
 			children = (
 				8207986629D3A1F800ABE1D3 /* MVState.swift */,
 				8207986829D3A2B500ABE1D3 /* MVFirstView.swift */,
+				2104DDCF29D3B43800BD25D8 /* MVSecondView.swift */,
+				2104DDD129D3B43F00BD25D8 /* MVThirdView.swift */,
+				2104DDD329D3B44800BD25D8 /* MVFourthView.swift */,
+				2104DDD529D3B44F00BD25D8 /* MVFifthView.swift */,
 			);
 			path = MV;
 			sourceTree = "<group>";
@@ -285,8 +309,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				82E1015E29D396B500C5CF92 /* tradeoffs.jpg in Resources */,
+				2104DDC829D3B29B00BD25D8 /* MV-Device-1-graph.png in Resources */,
 				2104DDC229D1E36600BD25D8 /* WrappedEnv-Device-1-summary.png in Resources */,
 				2104DDB029D1E2BA00BD25D8 /* VanillaEnv-Sim-2-graph.png in Resources */,
+				2104DDCA29D3B2A800BD25D8 /* MV-Device-1-summary.png in Resources */,
 				2104DDAE29D1E2AB00BD25D8 /* VanillaEnv-Sim-1-summary.png in Resources */,
 				2104DDBA29D1E31300BD25D8 /* WrappedEnv-Sim-2-summary.png in Resources */,
 				2104DDAC29D1E28700BD25D8 /* VanillaEnv-Sim-1-graph.png in Resources */,
@@ -295,6 +321,8 @@
 				2104DDB429D1E2E500BD25D8 /* WrappedEnv-Sim-1-graph.png in Resources */,
 				2104DD7E29CE5D9B00BD25D8 /* Preview Assets.xcassets in Resources */,
 				2104DDB829D1E30500BD25D8 /* WrappedEnv-Sim-2-graph.png in Resources */,
+				2104DDCC29D3B3FB00BD25D8 /* MVVM-Device-1-graph.png in Resources */,
+				2104DDCE29D3B41300BD25D8 /* MVVM-Device-1-summary.png in Resources */,
 				2104DDC029D1E34E00BD25D8 /* WrappedEnv-Device-1-graph.png in Resources */,
 				2104DDBC29D1E32500BD25D8 /* VanillaEnv-Device-1-graph.png in Resources */,
 				2104DDC429D1E3CE00BD25D8 /* README.md in Resources */,
@@ -316,16 +344,20 @@
 				2104DD9B29D0BEB200BD25D8 /* ViewTwo.swift in Sources */,
 				8207986929D3A2B500ABE1D3 /* MVFirstView.swift in Sources */,
 				2104DD9D29D0BEB800BD25D8 /* ViewThree.swift in Sources */,
+				2104DDD229D3B43F00BD25D8 /* MVThirdView.swift in Sources */,
+				2104DDD429D3B44800BD25D8 /* MVFourthView.swift in Sources */,
 				82E1015A29D38AF800C5CF92 /* MVVMFifthView.swift in Sources */,
 				2104DD9F29D0BEBE00BD25D8 /* ViewFour.swift in Sources */,
 				82E1015829D38AF000C5CF92 /* MVVMFourthView.swift in Sources */,
 				2104DDA329D0BECD00BD25D8 /* ViewOne.swift in Sources */,
 				82E1015129D371CC00C5CF92 /* MVVMFirstView.swift in Sources */,
+				2104DDD029D3B43800BD25D8 /* MVSecondView.swift in Sources */,
 				82E1015429D38AE200C5CF92 /* MVVMSecondView.swift in Sources */,
 				2104DD8529CE5DA100BD25D8 /* Env.swift in Sources */,
 				2104DDA129D0BEC300BD25D8 /* ViewFive.swift in Sources */,
 				2104DD7729CE5D9A00BD25D8 /* SwiftUIArchitectureApp.swift in Sources */,
 				2104DD9029D0072700BD25D8 /* StateStruct.swift in Sources */,
+				2104DDD629D3B44F00BD25D8 /* MVFifthView.swift in Sources */,
 				8207986729D3A1F800ABE1D3 /* MVState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

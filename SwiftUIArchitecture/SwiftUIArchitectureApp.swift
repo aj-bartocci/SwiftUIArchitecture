@@ -67,7 +67,7 @@ struct SwiftUIArchitectureApp: App {
                             WrappedViewOne()
                         )
                     }
-                    NavigationLink("Push MobX-like Stack") {
+                    NavigationLink("Push MVVM Stack") {
                         LazyView(
                             MVVMFirstView()
                         )
