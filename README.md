@@ -5,7 +5,13 @@
 
 Currently SwiftUI does not define an specific way of doing things, but instead Apple has provided many different building blocks like @Envrionment, @EnvironmentObject, @StateObject, etc. However, there doesn't seem to be a consistent way of how to do things in a scalable way. The example apps that Apple shows are usually quite simple and almost all the business logic lives in the Views themselves - is this how Apple intended SwiftUI to be? It seems unlikely as this makes testing a nightmare and sharing global state becomes difficult. This points to a need for a blueprint on how to handle the unique needs of the iOS environment. Many devs are coming from years of MVC, MVVM, MV-whatever and are now left scrambling to figure out how SwiftUI should fit into all of this. Everyone is on the same page that building the UI out is incredibly fast, however problems arise when apps begin to scale.
 
-Apple will probably create some type of framework at some point to help address these things, but who knows when and more importantly if it will be backwards compatable (probably not). So in the meantime it is helpful to benchmark and see where problems arise with certain strategies 
+Apple will probably create some type of framework at some point to help address these things, but who knows when and more importantly if it will be backwards compatable (probably not). So in the meantime it is helpful to benchmark and see where problems arise with certain strategies
+
+## Elm & SwiftUI
+
+SwiftUI was created based off of [Elm](https://elm-lang.org), so it would be logical to think to do SwiftUI like Elm web apps. However, it's not as simple as that. Elm suggests creating large files that represent whole pages rather than splitting into smaller reusable components, i.e. a home page would be a single large file that contains a single view model, and all child views together. This allows state mutations from any of the children to happen directly to the view model that is used for the whole page [(source)](https://guide.elm-lang.org/webapps/structure.html#:~:text=elm%2Dlang.org-,Culture%20Shock,-Folks%20coming%20from).
+
+Structuring a web app in this way actually makes a lot of sense, since only a single page is shown at a time. But, this does not make sense when doing a mobile app since we are pushing many views onto a stack that a web app could represent as a single page. The view/state boundaries are much less frequent when working in Elm than they are when working in SwiftUI. Becuase of these differences, it points to needing a solution that is more suited to mobile apps. 
 
 ## Goals of Benchmarking 
 - Feel Swifty
