@@ -15,9 +15,9 @@ class GlobalStateObject: ObservableObject {
     @Published var fastUpdatingValue: Int
     
     init(
-        foo: String = "Foo (initial)",
-        bar: String = "Bar (initial)",
-        baz: String = "Baz (initial)",
+        foo: String = "(initial)",
+        bar: String = "(initial)",
+        baz: String = "(initial)",
         fastUpdatingValue: Int = 0
     ) {
         self.foo = foo
@@ -42,6 +42,7 @@ class GlobalStateObject: ObservableObject {
     
     private func doFastUpdates() async throws {
         for _ in 0..<1000 {
+            // refresh every 1/20th of a second
             try await Task.sleep(nanoseconds: 1_000_000_000/20)
             
             fastUpdatingValue += 1

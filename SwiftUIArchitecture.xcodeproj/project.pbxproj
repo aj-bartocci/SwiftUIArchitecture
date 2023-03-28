@@ -32,6 +32,14 @@
 		2104DDC029D1E34E00BD25D8 /* WrappedEnv-Device-1-graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 2104DDBF29D1E34E00BD25D8 /* WrappedEnv-Device-1-graph.png */; };
 		2104DDC229D1E36600BD25D8 /* WrappedEnv-Device-1-summary.png in Resources */ = {isa = PBXBuildFile; fileRef = 2104DDC129D1E36600BD25D8 /* WrappedEnv-Device-1-summary.png */; };
 		2104DDC429D1E3CE00BD25D8 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2104DDC329D1E3CE00BD25D8 /* README.md */; };
+		8207986729D3A1F800ABE1D3 /* MVState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207986629D3A1F800ABE1D3 /* MVState.swift */; };
+		8207986929D3A2B500ABE1D3 /* MVFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207986829D3A2B500ABE1D3 /* MVFirstView.swift */; };
+		82E1015129D371CC00C5CF92 /* MVVMFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E1015029D371CC00C5CF92 /* MVVMFirstView.swift */; };
+		82E1015429D38AE200C5CF92 /* MVVMSecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E1015329D38AE200C5CF92 /* MVVMSecondView.swift */; };
+		82E1015629D38AE900C5CF92 /* MVVMThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E1015529D38AE900C5CF92 /* MVVMThirdView.swift */; };
+		82E1015829D38AF000C5CF92 /* MVVMFourthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E1015729D38AF000C5CF92 /* MVVMFourthView.swift */; };
+		82E1015A29D38AF800C5CF92 /* MVVMFifthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E1015929D38AF800C5CF92 /* MVVMFifthView.swift */; };
+		82E1015E29D396B500C5CF92 /* tradeoffs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82E1015D29D396B500C5CF92 /* tradeoffs.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +69,14 @@
 		2104DDBF29D1E34E00BD25D8 /* WrappedEnv-Device-1-graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WrappedEnv-Device-1-graph.png"; sourceTree = "<group>"; };
 		2104DDC129D1E36600BD25D8 /* WrappedEnv-Device-1-summary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WrappedEnv-Device-1-summary.png"; sourceTree = "<group>"; };
 		2104DDC329D1E3CE00BD25D8 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8207986629D3A1F800ABE1D3 /* MVState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVState.swift; sourceTree = "<group>"; };
+		8207986829D3A2B500ABE1D3 /* MVFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVFirstView.swift; sourceTree = "<group>"; };
+		82E1015029D371CC00C5CF92 /* MVVMFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMFirstView.swift; sourceTree = "<group>"; };
+		82E1015329D38AE200C5CF92 /* MVVMSecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSecondView.swift; sourceTree = "<group>"; };
+		82E1015529D38AE900C5CF92 /* MVVMThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMThirdView.swift; sourceTree = "<group>"; };
+		82E1015729D38AF000C5CF92 /* MVVMFourthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMFourthView.swift; sourceTree = "<group>"; };
+		82E1015929D38AF800C5CF92 /* MVVMFifthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMFifthView.swift; sourceTree = "<group>"; };
+		82E1015D29D396B500C5CF92 /* tradeoffs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tradeoffs.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,12 +112,12 @@
 			children = (
 				2104DD8429CE5DA100BD25D8 /* Env.swift */,
 				2104DD7629CE5D9A00BD25D8 /* SwiftUIArchitectureApp.swift */,
-				2104DDAA29D1E26200BD25D8 /* Profiling */,
+				8207986529D3A18100ABE1D3 /* Data */,
+				82E1015229D3785600C5CF92 /* MV */,
+				82E1014F29D371A500C5CF92 /* MVVM */,
 				2104DDA929D1DF8200BD25D8 /* WrappedEnvObject */,
 				2104DDA629D0FCFA00BD25D8 /* VanillaEnvObject */,
-				2104DD8E29D0070E00BD25D8 /* GlobalStateStruct */,
-				2104DD8D29D006FC00BD25D8 /* GlobalStateObject */,
-				2104DD7A29CE5D9B00BD25D8 /* Assets.xcassets */,
+				82E1015F29D396BB00C5CF92 /* Assets */,
 				2104DD7C29CE5D9B00BD25D8 /* Preview Content */,
 			);
 			path = SwiftUIArchitecture;
@@ -170,6 +186,46 @@
 			path = Profiling;
 			sourceTree = "<group>";
 		};
+		8207986529D3A18100ABE1D3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2104DD8E29D0070E00BD25D8 /* GlobalStateStruct */,
+				2104DD8D29D006FC00BD25D8 /* GlobalStateObject */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		82E1014F29D371A500C5CF92 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				82E1015029D371CC00C5CF92 /* MVVMFirstView.swift */,
+				82E1015329D38AE200C5CF92 /* MVVMSecondView.swift */,
+				82E1015529D38AE900C5CF92 /* MVVMThirdView.swift */,
+				82E1015729D38AF000C5CF92 /* MVVMFourthView.swift */,
+				82E1015929D38AF800C5CF92 /* MVVMFifthView.swift */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		82E1015229D3785600C5CF92 /* MV */ = {
+			isa = PBXGroup;
+			children = (
+				8207986629D3A1F800ABE1D3 /* MVState.swift */,
+				8207986829D3A2B500ABE1D3 /* MVFirstView.swift */,
+			);
+			path = MV;
+			sourceTree = "<group>";
+		};
+		82E1015F29D396BB00C5CF92 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2104DDAA29D1E26200BD25D8 /* Profiling */,
+				82E1015D29D396B500C5CF92 /* tradeoffs.jpg */,
+				2104DD7A29CE5D9B00BD25D8 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -228,6 +284,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82E1015E29D396B500C5CF92 /* tradeoffs.jpg in Resources */,
 				2104DDC229D1E36600BD25D8 /* WrappedEnv-Device-1-summary.png in Resources */,
 				2104DDB029D1E2BA00BD25D8 /* VanillaEnv-Sim-2-graph.png in Resources */,
 				2104DDAE29D1E2AB00BD25D8 /* VanillaEnv-Sim-1-summary.png in Resources */,
@@ -255,14 +312,21 @@
 			files = (
 				2104DDA829D1039500BD25D8 /* WrappedEnvObject.swift in Sources */,
 				2104DD9229D0BB3200BD25D8 /* StateObject.swift in Sources */,
+				82E1015629D38AE900C5CF92 /* MVVMThirdView.swift in Sources */,
 				2104DD9B29D0BEB200BD25D8 /* ViewTwo.swift in Sources */,
+				8207986929D3A2B500ABE1D3 /* MVFirstView.swift in Sources */,
 				2104DD9D29D0BEB800BD25D8 /* ViewThree.swift in Sources */,
+				82E1015A29D38AF800C5CF92 /* MVVMFifthView.swift in Sources */,
 				2104DD9F29D0BEBE00BD25D8 /* ViewFour.swift in Sources */,
+				82E1015829D38AF000C5CF92 /* MVVMFourthView.swift in Sources */,
 				2104DDA329D0BECD00BD25D8 /* ViewOne.swift in Sources */,
+				82E1015129D371CC00C5CF92 /* MVVMFirstView.swift in Sources */,
+				82E1015429D38AE200C5CF92 /* MVVMSecondView.swift in Sources */,
 				2104DD8529CE5DA100BD25D8 /* Env.swift in Sources */,
 				2104DDA129D0BEC300BD25D8 /* ViewFive.swift in Sources */,
 				2104DD7729CE5D9A00BD25D8 /* SwiftUIArchitectureApp.swift in Sources */,
 				2104DD9029D0072700BD25D8 /* StateStruct.swift in Sources */,
+				8207986729D3A1F800ABE1D3 /* MVState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

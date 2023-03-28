@@ -44,11 +44,8 @@ class EnvObjTest: ObservableObject {
 
 @main
 struct SwiftUIArchitectureApp: App {
-    @StateObject var state = GlobalStateObject(
-        foo: "(App root)",
-        bar: "(App root)",
-        fastUpdatingValue: 0
-    )
+    @StateObject var state = GlobalStateObject()
+    @Environment(\.store) var store: MVState
 //    @State var state = GlobalStateObject(
 //        foo: "(App root)",
 //        bar: "(App root)",
@@ -70,10 +67,24 @@ struct SwiftUIArchitectureApp: App {
                             WrappedViewOne()
                         )
                     }
+                    NavigationLink("Push MobX-like Stack") {
+                        LazyView(
+                            MVVMFirstView()
+                        )
+                    }
+                    NavigationLink("Push MV Stack") {
+                        LazyView(
+                            MVFirstView()
+                        )
+                    }
                 }
             }
             .navigationViewStyle(.stack)
             .environmentObject(state)
+            .environmentObject(store.fooState)
+            .environmentObject(store.barState)
+            .environmentObject(store.bazState)
+            .environmentObject(store.fastState)
         }
     }
 }
