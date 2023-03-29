@@ -40,6 +40,11 @@
 		2104DDD229D3B43F00BD25D8 /* MVThirdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2104DDD129D3B43F00BD25D8 /* MVThirdView.swift */; };
 		2104DDD429D3B44800BD25D8 /* MVFourthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2104DDD329D3B44800BD25D8 /* MVFourthView.swift */; };
 		2104DDD629D3B44F00BD25D8 /* MVFifthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2104DDD529D3B44F00BD25D8 /* MVFifthView.swift */; };
+		2104DDD929D3B55F00BD25D8 /* ReduxViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2104DDD829D3B55F00BD25D8 /* ReduxViews.swift */; };
+		2104DDDB29D3B58C00BD25D8 /* ReduxState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2104DDDA29D3B58C00BD25D8 /* ReduxState.swift */; };
+		2104DDDD29D3B59300BD25D8 /* ReduxStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2104DDDC29D3B59300BD25D8 /* ReduxStore.swift */; };
+		2104DDDF29D3B90D00BD25D8 /* Redux-Device-1-graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 2104DDDE29D3B90D00BD25D8 /* Redux-Device-1-graph.png */; };
+		2104DDE129D3B91C00BD25D8 /* Redux-Device-1-summary.png in Resources */ = {isa = PBXBuildFile; fileRef = 2104DDE029D3B91C00BD25D8 /* Redux-Device-1-summary.png */; };
 		8207986729D3A1F800ABE1D3 /* MVState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207986629D3A1F800ABE1D3 /* MVState.swift */; };
 		8207986929D3A2B500ABE1D3 /* MVFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8207986829D3A2B500ABE1D3 /* MVFirstView.swift */; };
 		82E1015129D371CC00C5CF92 /* MVVMFirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E1015029D371CC00C5CF92 /* MVVMFirstView.swift */; };
@@ -85,6 +90,11 @@
 		2104DDD129D3B43F00BD25D8 /* MVThirdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVThirdView.swift; sourceTree = "<group>"; };
 		2104DDD329D3B44800BD25D8 /* MVFourthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVFourthView.swift; sourceTree = "<group>"; };
 		2104DDD529D3B44F00BD25D8 /* MVFifthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVFifthView.swift; sourceTree = "<group>"; };
+		2104DDD829D3B55F00BD25D8 /* ReduxViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxViews.swift; sourceTree = "<group>"; };
+		2104DDDA29D3B58C00BD25D8 /* ReduxState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxState.swift; sourceTree = "<group>"; };
+		2104DDDC29D3B59300BD25D8 /* ReduxStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxStore.swift; sourceTree = "<group>"; };
+		2104DDDE29D3B90D00BD25D8 /* Redux-Device-1-graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Redux-Device-1-graph.png"; sourceTree = "<group>"; };
+		2104DDE029D3B91C00BD25D8 /* Redux-Device-1-summary.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Redux-Device-1-summary.png"; sourceTree = "<group>"; };
 		8207986629D3A1F800ABE1D3 /* MVState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVState.swift; sourceTree = "<group>"; };
 		8207986829D3A2B500ABE1D3 /* MVFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVFirstView.swift; sourceTree = "<group>"; };
 		82E1015029D371CC00C5CF92 /* MVVMFirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMFirstView.swift; sourceTree = "<group>"; };
@@ -129,6 +139,7 @@
 				2104DD8429CE5DA100BD25D8 /* Env.swift */,
 				2104DD7629CE5D9A00BD25D8 /* SwiftUIArchitectureApp.swift */,
 				8207986529D3A18100ABE1D3 /* Data */,
+				2104DDD729D3B54100BD25D8 /* Redux */,
 				82E1015229D3785600C5CF92 /* MV */,
 				82E1014F29D371A500C5CF92 /* MVVM */,
 				2104DDA929D1DF8200BD25D8 /* WrappedEnvObject */,
@@ -202,8 +213,20 @@
 				2104DDC929D3B2A800BD25D8 /* MV-Device-1-summary.png */,
 				2104DDCB29D3B3FB00BD25D8 /* MVVM-Device-1-graph.png */,
 				2104DDCD29D3B41300BD25D8 /* MVVM-Device-1-summary.png */,
+				2104DDDE29D3B90D00BD25D8 /* Redux-Device-1-graph.png */,
+				2104DDE029D3B91C00BD25D8 /* Redux-Device-1-summary.png */,
 			);
 			path = Profiling;
+			sourceTree = "<group>";
+		};
+		2104DDD729D3B54100BD25D8 /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				2104DDDA29D3B58C00BD25D8 /* ReduxState.swift */,
+				2104DDDC29D3B59300BD25D8 /* ReduxStore.swift */,
+				2104DDD829D3B55F00BD25D8 /* ReduxViews.swift */,
+			);
+			path = Redux;
 			sourceTree = "<group>";
 		};
 		8207986529D3A18100ABE1D3 /* Data */ = {
@@ -321,6 +344,7 @@
 				2104DDB429D1E2E500BD25D8 /* WrappedEnv-Sim-1-graph.png in Resources */,
 				2104DD7E29CE5D9B00BD25D8 /* Preview Assets.xcassets in Resources */,
 				2104DDB829D1E30500BD25D8 /* WrappedEnv-Sim-2-graph.png in Resources */,
+				2104DDDF29D3B90D00BD25D8 /* Redux-Device-1-graph.png in Resources */,
 				2104DDCC29D3B3FB00BD25D8 /* MVVM-Device-1-graph.png in Resources */,
 				2104DDCE29D3B41300BD25D8 /* MVVM-Device-1-summary.png in Resources */,
 				2104DDC029D1E34E00BD25D8 /* WrappedEnv-Device-1-graph.png in Resources */,
@@ -328,6 +352,7 @@
 				2104DDC429D1E3CE00BD25D8 /* README.md in Resources */,
 				2104DDB229D1E2C900BD25D8 /* VanillaEnv-Sim-2-summary.png in Resources */,
 				2104DD7B29CE5D9B00BD25D8 /* Assets.xcassets in Resources */,
+				2104DDE129D3B91C00BD25D8 /* Redux-Device-1-summary.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,8 +371,11 @@
 				2104DD9D29D0BEB800BD25D8 /* ViewThree.swift in Sources */,
 				2104DDD229D3B43F00BD25D8 /* MVThirdView.swift in Sources */,
 				2104DDD429D3B44800BD25D8 /* MVFourthView.swift in Sources */,
+				2104DDDD29D3B59300BD25D8 /* ReduxStore.swift in Sources */,
+				2104DDDB29D3B58C00BD25D8 /* ReduxState.swift in Sources */,
 				82E1015A29D38AF800C5CF92 /* MVVMFifthView.swift in Sources */,
 				2104DD9F29D0BEBE00BD25D8 /* ViewFour.swift in Sources */,
+				2104DDD929D3B55F00BD25D8 /* ReduxViews.swift in Sources */,
 				82E1015829D38AF000C5CF92 /* MVVMFourthView.swift in Sources */,
 				2104DDA329D0BECD00BD25D8 /* ViewOne.swift in Sources */,
 				82E1015129D371CC00C5CF92 /* MVVMFirstView.swift in Sources */,

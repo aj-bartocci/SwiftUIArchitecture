@@ -46,6 +46,7 @@ class EnvObjTest: ObservableObject {
 struct SwiftUIArchitectureApp: App {
     @StateObject var state = GlobalStateObject()
     @Environment(\.store) var store: MVState
+    @StateObject var reduxStore = ReduxStore()
 //    @State var state = GlobalStateObject(
 //        foo: "(App root)",
 //        bar: "(App root)",
@@ -77,6 +78,11 @@ struct SwiftUIArchitectureApp: App {
                             MVFirstView()
                         )
                     }
+                    NavigationLink("Push Redux Stack") {
+                        LazyView(
+                            ReduxFirstView()
+                        )
+                    }
                 }
             }
             .navigationViewStyle(.stack)
@@ -85,6 +91,7 @@ struct SwiftUIArchitectureApp: App {
             .environmentObject(store.barState)
             .environmentObject(store.bazState)
             .environmentObject(store.fastState)
+            .environmentObject(reduxStore)
         }
     }
 }
